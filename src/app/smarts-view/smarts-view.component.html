@@ -1,0 +1,27 @@
+
+<div >
+        <div >
+
+            <h2>Mes Smarts</h2>
+            <!-- <ul class="carts list-group-item">
+           
+                    
+            
+            </ul> -->
+                <div class="container">
+                <div class="row">
+                        <div class="col-md-4" *ngFor="let smart of smarts;let i=index">
+                                <app-smart 
+                                [indexOfSmart]="i"
+                                [nomSmart]="smart.nom"
+                                [etatSmart]="smart.etat"></app-smart>
+                        </div>
+                        </div>     
+                </div>
+                
+            <!--<button class="btn btn-success" 
+            (click)="onAllumer()">Tout Allumer</button>
+            <button class="btn btn-danger" 
+            (click)="onEteint()">Tout Eteindre</button>-->
+        </div>
+  </div>
